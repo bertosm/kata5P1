@@ -20,6 +20,7 @@ public class Kata5P1 {
             System.out.println( "id = " + rs.getInt("id") + "name = " + rs.getString("name"));
         }
         
+        st.execute("CREATE TABLE IF NOT EXISTS MAIL ('id' INTEGER PRIMARY KEY AUTOINCREMENT , 'Mail' TEXT NOT NULL);");
     }
     
 }
